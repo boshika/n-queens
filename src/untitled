@@ -1,0 +1,28 @@
+window.countNRooksSolutions = function(n) {
+  var solutionCount = 0;
+  // Creat a new chessboard with the size of n
+  var board = new Board({n:n});
+
+
+  var findSolution = function(row) {
+
+    // base case
+    if (row === n) {
+      solutionCount ++;
+      return;
+    }
+
+    // iterate over each column in whatever row we are in
+    for (var i = 0; i < n; i++) {
+      board.togglePiece(row, i);
+      if(!board.hasAnyRooksConflicts()) {
+        findSolution(row + 1);
+      }
+      board.togglePiece(row, i);
+    }
+  }
+  findSolution(0);
+
+  console.log('Number of solutions for ' + n + ' rooks:', solutionCount);
+  return solutionCount;
+};
