@@ -79,6 +79,7 @@
     //
     // test if a specific row on this board contains a conflict
     hasRowConflictAt: function(rowIndex) {
+<<<<<<< HEAD
       // Boshika's alternative solution
       // var variable = rowIndex.slice()
       // variable.sort.reverse();
@@ -96,10 +97,14 @@
         return true;
       }
       return false;
+=======
+      return false; // fixme
+>>>>>>> d676afdde7f6120d7c1cb673f7a0bfe5b46b2c88
     },
 
     // test if any rows on this board contain conflicts
     hasAnyRowConflicts: function() {
+<<<<<<< HEAD
        var anyConflicts = false;
        for (var i = 0; i < this.rows().length; i++ ) {
         if (this.hasRowConflictAt(i)) {
@@ -107,6 +112,9 @@
         }
        }
        return anyConflicts;
+=======
+      return false; // fixme
+>>>>>>> d676afdde7f6120d7c1cb673f7a0bfe5b46b2c88
     },
 
 
@@ -116,6 +124,7 @@
     //
     // test if a specific column on this board contains a conflict
     hasColConflictAt: function(colIndex) {
+<<<<<<< HEAD
       var count = 0;
       var rows = this.rows();
       for(var i =0; i < rows.length; i++) {
@@ -125,10 +134,14 @@
         return true;
       }
       return false;
+=======
+      return false; // fixme
+>>>>>>> d676afdde7f6120d7c1cb673f7a0bfe5b46b2c88
     },
 
     // test if any columns on this board contain conflicts
     hasAnyColConflicts: function() {
+<<<<<<< HEAD
       var anyConflicts = false;
       for (var i = 0; i < this.rows().length; i++ ) {
        if (this.hasColConflictAt(i)) {
@@ -136,6 +149,9 @@
        }
       }
       return anyConflicts;
+=======
+      return false; // fixme
+>>>>>>> d676afdde7f6120d7c1cb673f7a0bfe5b46b2c88
     },
 
 
@@ -144,6 +160,7 @@
     // --------------------------------------------------------------
     //
     // test if a specific major diagonal on this board contains a conflict
+<<<<<<< HEAD
 
     hasMajorDiagonalConflictAt: function(majorDiagonalColumnIndexAtFirstRow) {
       //refer to _getFirstRowColumnIndexForMajorDiagonalOn
@@ -163,10 +180,15 @@
         return true;
       }
       return false;
+=======
+    hasMajorDiagonalConflictAt: function(majorDiagonalColumnIndexAtFirstRow) {
+      return false; // fixme
+>>>>>>> d676afdde7f6120d7c1cb673f7a0bfe5b46b2c88
     },
 
     // test if any major diagonals on this board contain conflicts
     hasAnyMajorDiagonalConflicts: function() {
+<<<<<<< HEAD
       var anyConflicts = false;
       for (var i = this.rows().length * -1; i < this.rows().length; i++ ) {
        if (this.hasMajorDiagonalConflictAt(i)) {
@@ -174,6 +196,9 @@
        }
       }
       return anyConflicts;
+=======
+      return false; // fixme
+>>>>>>> d676afdde7f6120d7c1cb673f7a0bfe5b46b2c88
     },
 
 
@@ -183,6 +208,7 @@
     //
     // test if a specific minor diagonal on this board contains a conflict
     hasMinorDiagonalConflictAt: function(minorDiagonalColumnIndexAtFirstRow) {
+<<<<<<< HEAD
       //_getFirstRowColumnIndexForMinorDiagonalOn:
       var i = 0;
       if (minorDiagonalColumnIndexAtFirstRow < 0) {
@@ -198,10 +224,14 @@
         return true;
       }
       return false;
+=======
+      return false; // fixme
+>>>>>>> d676afdde7f6120d7c1cb673f7a0bfe5b46b2c88
     },
 
     // test if any minor diagonals on this board contain conflicts
     hasAnyMinorDiagonalConflicts: function() {
+<<<<<<< HEAD
       var anyConflicts = false;
       // I added multiplied this.rows().length by 2
       for (var i = this.rows().length * -1; i < this.rows().length * 2; i++ ) {
@@ -210,6 +240,9 @@
        }
       }
       return anyConflicts;
+=======
+      return false; // fixme
+>>>>>>> d676afdde7f6120d7c1cb673f7a0bfe5b46b2c88
     }
 
     /*--------------------  End of Helper Functions  ---------------------*/

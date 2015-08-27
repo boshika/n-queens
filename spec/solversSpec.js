@@ -45,7 +45,10 @@ describe('solvers', function() {
           }, 0);
         }, 0);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> d676afdde7f6120d7c1cb673f7a0bfe5b46b2c88
         expect(solutionBoard.get('n')).to.equal(n);
         expect(numPieces).to.equal(n);
         expect(solutionBoard.hasAnyQueensConflicts()).to.be.equal(false);

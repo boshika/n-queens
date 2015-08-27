@@ -14,6 +14,7 @@
 // return a matrix (an array of arrays) representing a single nxn chessboard, with n rooks placed such that none of them can attack each other
 
 window.findNRooksSolution = function(n) {
+<<<<<<< HEAD
   var board = new Board({n:n});
   var solution = board.rows();
 
@@ -37,6 +38,11 @@ window.findNRooksSolution = function(n) {
   }
   findSolution(0);
   console.log('Single solution for ' + n + ' queens:', JSON.stringify(solution));
+=======
+  var solution = undefined; //fixme
+
+  console.log('Single solution for ' + n + ' rooks:', JSON.stringify(solution));
+>>>>>>> d676afdde7f6120d7c1cb673f7a0bfe5b46b2c88
   return solution;
 };
 
@@ -44,6 +50,7 @@ window.findNRooksSolution = function(n) {
 
 // return the number of nxn chessboards that exist, with n rooks placed such that none of them can attack each other
 window.countNRooksSolutions = function(n) {
+<<<<<<< HEAD
   var solutionCount = 0;
   // Creat a new chessboard with the size of n
   var board = new Board({n:n});
@@ -68,12 +75,19 @@ window.countNRooksSolutions = function(n) {
   console.log('Number of solutions for ' + n + ' rooks:', solutionCount);
   return solutionCount;
 
+=======
+  var solutionCount = undefined; //fixme
+
+  console.log('Number of solutions for ' + n + ' rooks:', solutionCount);
+  return solutionCount;
+>>>>>>> d676afdde7f6120d7c1cb673f7a0bfe5b46b2c88
 };
 
 
 
 // return a matrix (an array of arrays) representing a single nxn chessboard, with n queens placed such that none of them can attack each other
 window.findNQueensSolution = function(n) {
+<<<<<<< HEAD
   // Creat a new chessboard with the size of n
   var board = new Board({n:n});
   var solution = board.rows();
@@ -97,6 +111,10 @@ window.findNQueensSolution = function(n) {
     }
   }
   findSolution(0);
+=======
+  var solution = undefined; //fixme
+
+>>>>>>> d676afdde7f6120d7c1cb673f7a0bfe5b46b2c88
   console.log('Single solution for ' + n + ' queens:', JSON.stringify(solution));
   return solution;
 };
@@ -104,6 +122,7 @@ window.findNQueensSolution = function(n) {
 
 // return the number of nxn chessboards that exist, with n queens placed such that none of them can attack each other
 window.countNQueensSolutions = function(n) {
+<<<<<<< HEAD
   var solutionCount = 0;
    // Creat a new chessboard with the size of n
    var board = new Board({n:n});
@@ -124,6 +143,9 @@ window.countNQueensSolutions = function(n) {
      }
    }
    findSolution(0);
+=======
+  var solutionCount = undefined; //fixme
+>>>>>>> d676afdde7f6120d7c1cb673f7a0bfe5b46b2c88
 
   console.log('Number of solutions for ' + n + ' queens:', solutionCount);
   return solutionCount;
